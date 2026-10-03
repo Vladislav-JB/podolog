@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@1,700&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231d6b62%27/%3E%3Cpath d=%27M8 23h6v-5h5v-5h5%27 fill=%27none%27 stroke=%27%23ffffff%27 stroke-width=%272.4%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MedicalClinic","name":"Подолог рядом","description":"Кабинет подологии: вросший ноготь, титановая нить, утолщённые ногти, натоптыши, медицинский педикюр.","url":"http://web-atelie.ru/podolog/","image":"http://web-atelie.ru/podolog/assets/og.jpg","telephone":"+7 (900) 000-00-00","openingHours":"Mo-Su 10:00-21:00","medicalSpecialty":"Podiatric","address":{"@type":"PostalAddress","streetAddress":"ул. Садовая, 12, 1 этаж","addressCountry":"RU"},"priceRange":"от 1 500 ₽"}
@@ -347,6 +348,14 @@
   .close__or { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
   @media (max-width: 640px) { .order { grid-template-columns: minmax(0,1fr); } }
   @media (max-width: 860px) { .order label, .close__or { font-size: .95rem; } }
+
+  /* подпись разработчика в подвале: «Создан в «Веб-Ателье»» – одинаковая на всех сайтах, не менять */
+  .foot { align-items: center; }
+  .foot__made { display: inline-block; white-space: nowrap; font-style: italic; font-size: var(--v-t-sm); line-height: 1.4; color: var(--v-ink-soft); padding: .4em 0; }
+  .foot__made a { display: inline; margin: 0 0 0 .3em; color: inherit; text-decoration: none; font-family: Calibri, "Carlito", sans-serif; font-weight: 700; font-style: italic; font-size: 1.12em; }
+  .foot__made a:hover { color: var(--v-ink); text-decoration: underline; text-underline-offset: .18em; }
+  .foot__made img { display: inline-block; width: 40px; height: 52px; max-width: none; margin-left: .35em; vertical-align: -7px; }
+  @media (max-width: 860px) { .foot__made { font-size: 1rem; } }
 </style>
 </head>
 <body>
@@ -626,7 +635,7 @@
         <footer class="foot">
           <span>Кабинет подологии «Подолог рядом»</span>
           <span>ИП Крылова М. А. · ИНН 770000000005</span>
-          <span class="foot__more">Фото: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a></span>
+          <span class="foot__made">Создан в <a href="http://web-atelie.ru/" target="_blank" rel="noopener">«Веб-Ателье»</a><img src="assets/web-atelie.png" alt="" width="40" height="52" loading="lazy" decoding="async"></span>
         </footer>
       </div>
     </section>
